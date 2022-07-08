@@ -136,5 +136,3 @@ const Effect = (() => {
     loadfirst()
     close()
 })()
-
-console.log('Hello')
