@@ -1,0 +1,195 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins.ttf");
+}
+@font-face {
+  font-family: PoppinsBold;
+  src: url("../fonts/PoppinsBold.ttf");
+}
+@font-face {
+  font-family: Norse;
+  src: url("../fonts/Norse.otf");
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Poppins, sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #fefefe;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 40vw 60vw;
+  background-color: #1c1c1f;
+}
+
+h1, p {
+  padding: 0;
+  margin: 0;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  background: url("../image/asset.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.left .line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 20px;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.left .line h1 {
+  font-family: Norse;
+}
+
+.right {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.right h1 {
+  font-family: PoppinsBold, sans-serif;
+  font-size: 1.5rem;
+}
+.right .form-ctn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #2b2b2b;
+  min-width: 500px;
+  min-height: 500px;
+  border: 5px solid #1e2020;
+  box-shadow: 0px 2px 10px black;
+}
+.right .form-ctn .btn-ctn {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+.right .form-ctn .btn-ctn .switch {
+  width: 50%;
+  background-color: #1e2020;
+  font-family: PoppinsBold, sans-serif;
+  font-size: 1.5rem;
+  border: none;
+  color: #fefefe;
+}
+.right .form-ctn .btn-ctn .switch:hover {
+  cursor: pointer;
+}
+.right .form-ctn .btn-ctn .active {
+  background-color: #2b2b2b;
+}
+.right .form-ctn .form {
+  padding: 20px;
+  gap: 50px;
+}
+.right .form-ctn .form div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.right .form-ctn .form div label {
+  display: flex;
+  flex-direction: column;
+  font-family: PoppinsBold;
+  text-align: center;
+  gap: 5px;
+}
+.right .form-ctn .form div label input[type=text], .right .form-ctn .form div label input[type=number] {
+  font-family: Poppins, sans-serif;
+  padding: 5px;
+}
+.right .form-ctn .form .submit {
+  transition: 0.5s ease;
+  background-color: #141414;
+  border: none;
+  color: #fefefe;
+  position: absolute;
+  bottom: 20px;
+  width: 92%;
+  padding: 10px;
+  font-family: PoppinsBold, sans-serif;
+}
+.right .form-ctn .form .submit:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: scale(1.01);
+}
+.right .form-ctn .form .submit:active {
+  transform: translateY(5px);
+}
+
+.modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal .modalContent {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 300px;
+  background-color: #1c1c1f;
+  gap: 10px;
+  box-shadow: 0px 2px 10px black;
+}
+.modal .modalContent h1 {
+  text-align: center;
+  font-family: PoppinsBold, sans-serif;
+}
+.modal .modalContent label {
+  padding: 0px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.modal .modalContent label .info {
+  font-family: PoppinsBold, sans-serif;
+}
+.modal .modalContent .close {
+  transition: 0.5s ease;
+  position: absolute;
+  border: none;
+  padding: 10px;
+  bottom: 20px;
+  font-size: 1rem;
+  text-align: center;
+  width: 95%;
+  color: #fefefe;
+  font-family: PoppinsBold;
+  background-color: #141414;
+}
+.modal .modalContent .close:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  transform: scale(1.01);
+}
+.modal .modalContent .close:active {
+  transform: translateY(5px);
+}/*# sourceMappingURL=style.css.map */
